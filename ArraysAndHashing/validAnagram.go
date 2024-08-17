@@ -5,12 +5,6 @@ import (
 	"sort"
 )
 
-func main() {
-	sA := "anagram"
-	sB := "nagaram"
-	fmt.Println(isAnagram(sA, sB))
-}
-
 func isAnagram(s string, t string) bool {
 	if len(s) != len(t) {
 		return false

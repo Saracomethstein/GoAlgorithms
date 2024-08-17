@@ -4,11 +4,6 @@ import (
 	"fmt"
 )
 
-func main() {
-	str := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
-	fmt.Println(groupAnagrams(str))
-}
-
 func groupAnagrams(strs []string) [][]string {
 	var anagrams = make(map[[26]int][]string)
 
