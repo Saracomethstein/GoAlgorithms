@@ -1,9 +1,3 @@
-package main
-
-import (
-	"fmt"
-)
-
 func containsDuplicate(nums []int) bool {
 	var noneDup = make(map[int]bool)
 

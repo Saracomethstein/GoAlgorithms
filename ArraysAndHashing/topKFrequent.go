@@ -1,9 +1,3 @@
-package main
-
-import (
-	"fmt"
-)
-
 func topKFrequent(nums []int, k int) []int {
 	var frequentM = make(map[int]int)
 	var frequentS = make([][]int, len(nums)+1)

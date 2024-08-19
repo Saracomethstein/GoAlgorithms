@@ -1,9 +1,3 @@
-package main
-
-import (
-	"fmt"
-)
-
 func groupAnagrams(strs []string) [][]string {
 	var anagrams = make(map[[26]int][]string)
 

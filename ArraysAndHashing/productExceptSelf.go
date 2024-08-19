@@ -1,9 +1,3 @@
-package main
-
-import (
-	"fmt"
-)
-
 func productExceptSelf(nums []int) []int {
 	res := make([]int, len(nums))
 		

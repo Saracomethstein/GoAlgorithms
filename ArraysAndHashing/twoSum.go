@@ -1,9 +1,3 @@
-package main
-
-import (
-	"fmt"
-)
-
 func twoSum(nums []int, target int) []int {
 	var hash = make(map[int]int)
 	for i, num := range nums {
