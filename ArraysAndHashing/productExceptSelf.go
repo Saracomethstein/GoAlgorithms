@@ -1,6 +1,8 @@
-func productExceptSelf(nums []int) []int {
+package arrays_and_hashing
+
+func ProductExceptSelf(nums []int) []int {
 	res := make([]int, len(nums))
-		
+
 	prefix := 1
 	for i, num := range nums {
 		res[i] = prefix

@@ -1,4 +1,6 @@
-func containsDuplicate(nums []int) bool {
+package arrays_and_hashing
+
+func ContainsDuplicate(nums []int) bool {
 	var noneDup = make(map[int]bool)
 
 	for _, v := range nums {

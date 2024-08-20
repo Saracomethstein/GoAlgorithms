@@ -1,4 +1,6 @@
-func groupAnagrams(strs []string) [][]string {
+package arrays_and_hashing
+
+func GroupAnagrams(strs []string) [][]string {
 	var anagrams = make(map[[26]int][]string)
 
 	for _, s := range strs {
