@@ -1,15 +1,12 @@
 package arrays_and_hashing
 
-import (
-	"math"
-)
+import "math"
 
 func MaxArea(height []int) int {
-	var lenH int = len(height) - 1
 	var lowH int = 0
-	var maxH int = lenH
+	var maxH int = len(height) - 1
 	var S float64
-	for {
+	for lowH < maxH {
 
 		if S <= math.Min(float64(height[lowH]), float64(height[maxH]))*float64(maxH-lowH) {
 			S = math.Min(float64(height[lowH]), float64(height[maxH])) * float64(maxH-lowH)
@@ -21,10 +18,6 @@ func MaxArea(height []int) int {
 			maxH--
 		} else if height[maxH] == height[lowH] {
 			lowH++
-		}
-
-		if maxH == lowH {
-			break
 		}
 	}
 	return int(S)
