@@ -1,5 +1,8 @@
 package arrays_and_hashing
 
+// link to the task on leetcode 
+// https://leetcode.com/problems/group-anagrams/description/
+
 func GroupAnagrams(strs []string) [][]string {
 	var anagrams = make(map[[26]int][]string)
 

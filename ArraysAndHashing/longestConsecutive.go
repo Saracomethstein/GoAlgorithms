@@ -1,5 +1,8 @@
 package arrays_and_hashing
 
+// link to the task on leetcode 
+// https://leetcode.com/problems/longest-consecutive-sequence/description/
+
 func LongestConsecutive(nums []int) int {
 	hashMap := make(map[int]bool)
 	var long int

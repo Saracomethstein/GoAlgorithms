@@ -1,5 +1,9 @@
 package arrays_and_hashing
 
+// link to the task on leetcode 
+// https://leetcode.com/problems/contains-duplicate/description/
+
+
 func ContainsDuplicate(nums []int) bool {
 	var noneDup = make(map[int]bool)
 

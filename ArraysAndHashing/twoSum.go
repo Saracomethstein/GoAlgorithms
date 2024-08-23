@@ -11,5 +11,5 @@ func TwoSum(nums []int, target int) []int {
 		}
 		hash[num] = i
 	}
-	return nil
+	return nil	
 }

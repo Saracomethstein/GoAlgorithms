@@ -2,6 +2,9 @@ package arrays_and_hashing
 
 import "math"
 
+// link to the task on leetcode
+// https://leetcode.com/problems/container-with-most-water/description/
+
 func MaxArea(height []int) int {
 	var lowH int = 0
 	var maxH int = len(height) - 1
