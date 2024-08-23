@@ -1,5 +1,8 @@
 package arrays_and_hashing
 
+// link to the task on leetcode 
+// https://leetcode.com/problems/valid-sudoku/description/
+
 func IsValidSudoku(board [][]byte) bool {
 	mapBoard := make(map[string]bool)
 	for i := range board {
