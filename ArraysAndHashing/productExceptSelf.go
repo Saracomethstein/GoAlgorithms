@@ -1,5 +1,8 @@
 package arrays_and_hashing
 
+// link to the task on leetcode
+// https://leetcode.com/problems/product-of-array-except-self/description/
+
 func ProductExceptSelf(nums []int) []int {
 	res := make([]int, len(nums))
 

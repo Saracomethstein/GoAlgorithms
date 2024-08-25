@@ -1,6 +1,6 @@
 package arrays_and_hashing
 
-// link to the task on leetcode 
+// link to the task on leetcode
 // https://leetcode.com/problems/set-matrix-zeroes/description/
 
 func SetZeros(matrix [][]int) {
