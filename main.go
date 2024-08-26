@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	tokens := []int{73, 74, 75, 71, 69, 72, 76, 73}
-	fmt.Println(tokens)
-	fmt.Println(stack.DailyTemperatures(tokens))
+	position := []int{10, 8, 0, 5, 3}
+	speed := []int{2, 4, 1, 1, 3}
+	fmt.Println(stack.CarFleet(12, position, speed))
 }
