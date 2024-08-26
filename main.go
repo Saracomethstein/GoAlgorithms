@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	tokens := []string{"4"}
-	fmt.Println(stack.EvalRPN(tokens))
+	tokens := []int{73, 74, 75, 71, 69, 72, 76, 73}
+	fmt.Println(tokens)
+	fmt.Println(stack.DailyTemperatures(tokens))
 }
