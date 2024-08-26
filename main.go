@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	s := "([()])"
-	fmt.Println(stack.IsValid(s))
+	tokens := []string{"4"}
+	fmt.Println(stack.EvalRPN(tokens))
 }
