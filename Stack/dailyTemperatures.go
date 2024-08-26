@@ -1,5 +1,8 @@
 package stack
 
+// link to the task on leetcode
+// https://leetcode.com/problems/daily-temperatures/submissions/1368818322/
+
 func DailyTemperatures(temperatures []int) []int {
 	answer := make([]int, len(temperatures))
 
