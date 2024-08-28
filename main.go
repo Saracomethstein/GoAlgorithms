@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	heights := []int{5, 5, 1, 7, 1, 1, 5, 2, 7, 6}
-	fmt.Println("Answer:", stack.LargestRectangleArea(heights))
+	position := []int{6, 2, 17}
+	speed := []int{3, 9, 2}
+	fmt.Println("Answer:", stack.CarFleet(20, position, speed))
 }

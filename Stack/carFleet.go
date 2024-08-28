@@ -1,20 +1,30 @@
 package stack
 
-import "fmt"
+import (
+	"sort"
+)
+
+type carInfo struct {
+	pos int
+	spd int
+}
 
 func CarFleet(target int, position []int, speed []int) int {
-	stack := make([]int, 0)
-	for i := len(position) - 1; i >= 0; i-- {
-		checkTarget := position[i] + speed[i]
+	pair := []carInfo{}
+	stack := []float32{}
+	for i, _ := range position {
+		pair = append(pair, carInfo{position[i], speed[i]})
+	}
 
-		if checkTarget <= target {
-			if stack[len(stack)-1] != checkTarget {
-				stack = append(stack, checkTarget)
-			}
+	sort.Slice(pair, func(i, j int) bool {
+		return pair[i].pos < pair[j].pos
+	})
+
+	for i := len(pair) - 1; i >= 0; i-- {
+		stack = append(stack, float32(target-pair[i].pos)/float32(pair[i].spd))
+		if len(stack) > 1 && stack[len(stack)-1] <= stack[len(stack)-2] {
+			stack = stack[:len(stack)-1]
 		}
-
-		fmt.Println(stack)
-
 	}
 	return len(stack)
 }
