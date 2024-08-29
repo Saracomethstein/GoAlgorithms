@@ -4,6 +4,8 @@ import (
 	"sort"
 )
 
+// link to the task on leetcode
+
 type carInfo struct {
 	pos int
 	spd int
