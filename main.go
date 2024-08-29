@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(arrays_and_hashing.Generate(5))
+	nums := []int{3, 3, 4}
+	fmt.Println(arrays_and_hashing.MajorityElement(nums))
 }
