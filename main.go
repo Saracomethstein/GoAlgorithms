@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	nums := []int{3, 3, 4}
-	fmt.Println(arrays_and_hashing.MajorityElement(nums))
+	nums := []int{1, 2, 3, 1, 2, 3}
+	fmt.Println(arrays_and_hashing.ContainsNearbyDuplicate(nums, 2))
 }
