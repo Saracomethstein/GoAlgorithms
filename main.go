@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	price := []int{7, 6, 4, 3, 1}
-	fmt.Println(arrays_and_hashing.MaxProfit(price))
+	nums := []int{2, 2, 1}
+	fmt.Println(arrays_and_hashing.SingleNumber(nums))
 }
