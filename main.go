@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	nums := []int{1, 2, 3, 1, 2, 3}
-	fmt.Println(arrays_and_hashing.ContainsNearbyDuplicate(nums, 2))
+	price := []int{7, 6, 4, 3, 1}
+	fmt.Println(arrays_and_hashing.MaxProfit(price))
 }
