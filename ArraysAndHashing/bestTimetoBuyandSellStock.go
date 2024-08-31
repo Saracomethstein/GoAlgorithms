@@ -6,10 +6,12 @@ package arrays_and_hashing
 func MaxProfit(prices []int) int {
 	minPrice := prices[0]
 	maxProfit := 0
+	curPrice := 0
 
 	for i := range prices {
-		if prices[i]-minPrice > maxProfit {
-			maxProfit = prices[i] - minPrice
+		curPrice = prices[i] - minPrice
+		if curPrice > maxProfit {
+			maxProfit = curPrice
 		}
 
 		if prices[i] < minPrice {
