@@ -8,5 +8,5 @@ import (
 func main() {
 	nums := []int{1, 2, 2, 1}
 	nums1 := []int{2, 2}
-	fmt.Println(arrays_and_hashing.Intersection(nums, nums1))
+	fmt.Println(arrays_and_hashing.Intersect(nums, nums1))
 }
