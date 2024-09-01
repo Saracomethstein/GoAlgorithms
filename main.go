@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	nums := []int{2, 2, 1}
-	fmt.Println(arrays_and_hashing.SingleNumber(nums))
+	nums := []int{0, 1, 0, 3, 2, 13}
+	arrays_and_hashing.MoveZeroes(nums)
+	fmt.Println(nums)
 }
