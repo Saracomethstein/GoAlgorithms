@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	nums := []int{0, 1, 0, 3, 2, 13}
-	arrays_and_hashing.MoveZeroes(nums)
-	fmt.Println(nums)
+	nums := []int{1, 2, 2, 1}
+	nums1 := []int{2, 2}
+	fmt.Println(arrays_and_hashing.Intersection(nums, nums1))
 }
