@@ -6,6 +6,7 @@ import (
 )
 
 func main() {
-	nums := []int{4, 3, 2, 7, 8, 2, 3, 1}
-	fmt.Println(arrays_and_hashing.FindDisappearedNumbers(nums))
+	fmt.Println(arrays_and_hashing.GetRow(3))
+	fmt.Println(arrays_and_hashing.GetRow(0))
+	fmt.Println(arrays_and_hashing.GetRow(1))
 }
