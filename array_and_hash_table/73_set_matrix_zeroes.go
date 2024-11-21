@@ -3,7 +3,7 @@ package arrays_and_hashing
 // link to the task on leetcode
 // https://leetcode.com/problems/set-matrix-zeroes/description/
 
-func SetZeros(matrix [][]int) {
+func setZeros(matrix [][]int) {
 	row := make([]int, len(matrix))
 	col := make([]int, len(matrix[0]))
 
