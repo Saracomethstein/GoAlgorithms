@@ -1,9 +1,9 @@
 package arrays_and_hashing
 
-// link to the task on leetcode 
+// link to the task on leetcode
 // https://leetcode.com/problems/two-sum/description/
 
-func TwoSum(nums []int, target int) []int {
+func twoSum(nums []int, target int) []int {
 	var hash = make(map[int]int)
 	for i, num := range nums {
 		if j, ok := hash[target-num]; ok {
@@ -11,5 +11,5 @@ func TwoSum(nums []int, target int) []int {
 		}
 		hash[num] = i
 	}
-	return nil	
+	return nil
 }
