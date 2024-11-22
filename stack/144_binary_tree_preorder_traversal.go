@@ -6,6 +6,9 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+// link to the task on leetcode
+// https://leetcode.com/problems/binary-tree-preorder-traversal/description/
+
 func preorderTraversal(root *TreeNode) []int {
 	if root == nil {
 		return []int{}
