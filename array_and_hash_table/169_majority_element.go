@@ -3,7 +3,7 @@ package arrays_and_hashing
 // link to the task on leetcode
 // https://leetcode.com/problems/majority-element/description/
 
-func MajorityElement(nums []int) int {
+func majorityElement(nums []int) int {
 	hashMap := make(map[int]int)
 	count := 0
 	element := 0

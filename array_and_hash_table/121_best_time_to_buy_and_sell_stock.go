@@ -3,7 +3,7 @@ package arrays_and_hashing
 // link to the task on leetcode
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 
-func MaxProfit(prices []int) int {
+func maxProfit(prices []int) int {
 	minPrice := prices[0]
 	maxProfit := 0
 	curPrice := 0

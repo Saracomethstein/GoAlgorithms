@@ -3,7 +3,7 @@ package stack
 // link to the task on leetcode
 // https://leetcode.com/problems/valid-parentheses/submissions/1367843292/
 
-func IsValid(s string) bool {
+func isValid(s string) bool {
 	hashMap := map[rune]rune{')': '(', ']': '[', '}': '{'}
 	stack := make([]rune, 0)
 

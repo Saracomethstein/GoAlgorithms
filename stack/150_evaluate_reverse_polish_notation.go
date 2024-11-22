@@ -7,7 +7,7 @@ import (
 // link to the task on leetcode
 // https://leetcode.com/problems/evaluate-reverse-polish-notation/description/
 
-func EvalRPN(tokens []string) int {
+func evalRPN(tokens []string) int {
 	result, _ := strconv.Atoi(tokens[0])
 	stack := make([]string, 0)
 

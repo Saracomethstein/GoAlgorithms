@@ -12,7 +12,7 @@ type carInfo struct {
 	spd int
 }
 
-func CarFleet(target int, position []int, speed []int) int {
+func carFleet(target int, position []int, speed []int) int {
 	pair := []carInfo{}
 	stack := []float32{}
 	for i, _ := range position {

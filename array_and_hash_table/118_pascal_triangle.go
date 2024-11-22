@@ -3,7 +3,7 @@ package arrays_and_hashing
 // link to the task on leetcode
 // https://leetcode.com/problems/pascals-triangle/description/
 
-func Generate(numRows int) [][]int {
+func generate(numRows int) [][]int {
 	res := make([][]int, 0)
 
 	array := make([][]int, numRows)

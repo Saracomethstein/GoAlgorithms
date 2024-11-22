@@ -5,7 +5,7 @@ import "sort"
 // // link to the task on leetcode
 // https://leetcode.com/problems/valid-anagram/description/
 
-func IsAnagram(s string, t string) bool {
+func isAnagram(s string, t string) bool {
 	if len(s) != len(t) {
 		return false
 	}

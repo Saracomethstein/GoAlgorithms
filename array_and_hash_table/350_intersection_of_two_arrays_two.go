@@ -3,7 +3,7 @@ package arrays_and_hashing
 // link to the task on leetcode
 // https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
 
-func Intersect(nums1 []int, nums2 []int) []int {
+func intersect(nums1 []int, nums2 []int) []int {
 	hashMap := make(map[int]int)
 	result := []int{}
 	for _, v := range nums1 {

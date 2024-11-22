@@ -3,7 +3,7 @@ package arrays_and_hashing
 // link to the task on leetcode
 // https://leetcode.com/problems/pascals-triangle-ii/description/
 
-func GetRow(rowIndex int) []int {
+func getRow(rowIndex int) []int {
 
 	if rowIndex == 0 {
 		res := []int{1}

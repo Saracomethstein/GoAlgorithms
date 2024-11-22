@@ -1,7 +1,7 @@
 package stack
 
-// // link to the task on leetcode
-// https://leetcode.com/problems/min-stack/submissions/1367892687/
+// link to the task on leetcode
+// https://leetcode.com/problems/min-stack/description/
 
 type MinStack struct {
 	min int

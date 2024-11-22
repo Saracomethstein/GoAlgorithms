@@ -3,7 +3,7 @@ package arrays_and_hashing
 // link to the task on leetcode
 // https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
 
-func FindDisappearedNumbers(nums []int) []int {
+func findDisappearedNumbers(nums []int) []int {
 	hashMap := make(map[int]bool)
 	result := []int{}
 	for i := 1; i <= len(nums); i++ {

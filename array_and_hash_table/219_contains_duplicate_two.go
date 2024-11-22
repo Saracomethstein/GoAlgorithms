@@ -8,7 +8,7 @@ import (
 // link to the task on leetcode
 // https://leetcode.com/problems/contains-duplicate-ii/description/
 
-func ContainsNearbyDuplicate(nums []int, k int) bool {
+func containsNearbyDuplicate(nums []int, k int) bool {
 	hashMap := make(map[int]int)
 
 	for i, v := range nums {
