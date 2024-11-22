@@ -1,5 +1,8 @@
 package stack
 
+// link to the task on leetcode
+// https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+
 func inorderTraversal(root *TreeNode) []int {
 	if root == nil {
 		return []int{}
