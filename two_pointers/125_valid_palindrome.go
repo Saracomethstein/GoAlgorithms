@@ -4,6 +4,9 @@ import (
 	"strings"
 )
 
+// link to the task on leetcode
+// https://leetcode.com/problems/valid-palindrome/
+
 func isPalindrome(s string) bool {
 	i, j := 0, len(s)-1
 	for i < j {
