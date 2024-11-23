@@ -7,8 +7,7 @@ func convertToTitle(columnNumber int) string {
 	ans := ""
 	for columnNumber > 0 {
 		columnNumber--
-		charCode := 'A' + rune(columnNumber%26)
-		ans = string(charCode) + ans
+		ans = string('A'+rune(columnNumber%26)) + ans
 		columnNumber /= 26
 	}
 	return ans
