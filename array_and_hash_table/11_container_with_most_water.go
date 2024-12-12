@@ -6,21 +6,22 @@ import "math"
 // https://leetcode.com/problems/container-with-most-water/description/
 
 func maxArea(height []int) int {
-	var lowH int = 0
-	var maxH int = len(height) - 1
+	var left int = 0
+	var right int = len(height) - 1
 	var S float64
-	for lowH < maxH {
+	for left < right {
 
-		if S <= math.Min(float64(height[lowH]), float64(height[maxH]))*float64(maxH-lowH) {
-			S = math.Min(float64(height[lowH]), float64(height[maxH])) * float64(maxH-lowH)
+		tmpS := math.Min(float64(height[left]), float64(height[right])) * float64(right-left)
+		if S <= tmpS {
+			S = tmpS
 		}
 
-		if height[lowH] < height[maxH] {
-			lowH++
-		} else if height[maxH] < height[lowH] {
-			maxH--
-		} else if height[maxH] == height[lowH] {
-			lowH++
+		if height[left] < height[right] {
+			left++
+		} else if height[right] < height[left] {
+			right--
+		} else if height[right] == height[left] {
+			left++
 		}
 	}
 	return int(S)
