@@ -1,6 +1,9 @@
 package arrays_and_hashing
 
-func FindTheDifference(s string, t string) byte {
+// link to the task on leetcode
+// https://leetcode.com/problems/find-the-difference/description/
+
+func findTheDifference(s string, t string) byte {
 	var sumS, sumT byte
 
 	for _, v := range t {
